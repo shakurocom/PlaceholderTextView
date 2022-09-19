@@ -14,7 +14,6 @@
 		177C9BC828AB882100E124CA /* PlaceholderTextView_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177C9BC728AB882100E124CA /* PlaceholderTextView_Framework.framework */; };
 		177C9BC928AB882100E124CA /* PlaceholderTextView_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 177C9BC728AB882100E124CA /* PlaceholderTextView_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		177C9BCD28AB88D100E124CA /* ExamplePlaceholderTextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177C9BCC28AB88D100E124CA /* ExamplePlaceholderTextViewViewController.swift */; };
-		96AC47B9729F6F9B677F0B1D /* Pods_PlaceholderTextView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC12F16B71CBEDF5F2AD1AC /* Pods_PlaceholderTextView_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,9 +39,6 @@
 		177C9BC128AB86B800E124CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		177C9BC728AB882100E124CA /* PlaceholderTextView_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PlaceholderTextView_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		177C9BCC28AB88D100E124CA /* ExamplePlaceholderTextViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePlaceholderTextViewViewController.swift; sourceTree = "<group>"; };
-		8829A30EBAE6C5E87C9F6B3D /* Pods-PlaceholderTextView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceholderTextView_Example.debug.xcconfig"; path = "Target Support Files/Pods-PlaceholderTextView_Example/Pods-PlaceholderTextView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8AC12F16B71CBEDF5F2AD1AC /* Pods_PlaceholderTextView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaceholderTextView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B64466943102E711A7517A55 /* Pods-PlaceholderTextView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceholderTextView_Example.release.xcconfig"; path = "Target Support Files/Pods-PlaceholderTextView_Example/Pods-PlaceholderTextView_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96AC47B9729F6F9B677F0B1D /* Pods_PlaceholderTextView_Example.framework in Frameworks */,
 				177C9BC828AB882100E124CA /* PlaceholderTextView_Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				177C9BC728AB882100E124CA /* PlaceholderTextView_Framework.framework */,
-				8AC12F16B71CBEDF5F2AD1AC /* Pods_PlaceholderTextView_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,8 +111,6 @@
 		8DC061A66D9016466FB06F3C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8829A30EBAE6C5E87C9F6B3D /* Pods-PlaceholderTextView_Example.debug.xcconfig */,
-				B64466943102E711A7517A55 /* Pods-PlaceholderTextView_Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -130,13 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 177C9BC428AB86B800E124CA /* Build configuration list for PBXNativeTarget "PlaceholderTextView_Example" */;
 			buildPhases = (
-				87C11A02443FDA3A6AAE2968 /* [CP] Check Pods Manifest.lock */,
 				177C9BCB28AB885000E124CA /* Swiftlint */,
 				177C9BAC28AB86B600E124CA /* Sources */,
 				177C9BAD28AB86B600E124CA /* Frameworks */,
 				177C9BAE28AB86B600E124CA /* Resources */,
 				177C9BCA28AB882100E124CA /* Embed Frameworks */,
-				29FB33C25DA439A02D3DE7C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,45 +201,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#debug log\nset -x\n\n${PODS_ROOT}/SwiftLint/swiftlint\n";
-		};
-		29FB33C25DA439A02D3DE7C1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PlaceholderTextView_Example/Pods-PlaceholderTextView_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PlaceholderTextView_Example/Pods-PlaceholderTextView_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlaceholderTextView_Example/Pods-PlaceholderTextView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		87C11A02443FDA3A6AAE2968 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PlaceholderTextView_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -401,7 +352,6 @@
 		};
 		177C9BC528AB86B800E124CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8829A30EBAE6C5E87C9F6B3D /* Pods-PlaceholderTextView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -431,7 +381,6 @@
 		};
 		177C9BC628AB86B800E124CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B64466943102E711A7517A55 /* Pods-PlaceholderTextView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
