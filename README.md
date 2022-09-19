@@ -1,4 +1,4 @@
-![Shakuro PlaceholderTextView](title_image.png)
+![Shakuro PlaceholderTextView](Resources/title_image.png)
 <br><br>
 # PlaceholderTextView
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
