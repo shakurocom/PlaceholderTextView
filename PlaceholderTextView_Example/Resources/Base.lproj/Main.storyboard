@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ufb-z0-z3X">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example Placeholder Text View View Controller-->
+        <scene sceneID="F5W-Fe-tDs">
+            <objects>
+                <viewController storyboardIdentifier="kExamplePlaceholderTextViewViewControllerID" automaticallyAdjustsScrollViewInsets="NO" id="ufb-z0-z3X" customClass="ExamplePlaceholderTextViewViewController" customModule="PlaceholderTextView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="50R-Jm-dHi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyd-8G-1Kn" userLabel="View - content">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="315" placeholderIntrinsicHeight="50" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="r5e-RN-TM0" customClass="PlaceholderTextView" customModule="PlaceholderTextView_Framework">
+                                        <rect key="frame" x="30" y="30" width="354" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="3nT-y7-wPO"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="r5e-RN-TM0" secondAttribute="trailing" constant="30" id="1cC-9Q-Pm9"/>
+                                    <constraint firstItem="r5e-RN-TM0" firstAttribute="leading" secondItem="eyd-8G-1Kn" secondAttribute="leading" constant="30" id="8cH-GT-NZt"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="r5e-RN-TM0" secondAttribute="bottom" constant="30" id="UTj-Q8-xd1"/>
+                                    <constraint firstItem="r5e-RN-TM0" firstAttribute="top" secondItem="eyd-8G-1Kn" secondAttribute="top" constant="30" id="j2P-jd-MxR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5d3-Mo-sva"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eyd-8G-1Kn" firstAttribute="top" secondItem="5d3-Mo-sva" secondAttribute="top" id="CdG-vy-4p0"/>
+                            <constraint firstItem="5d3-Mo-sva" firstAttribute="bottom" secondItem="eyd-8G-1Kn" secondAttribute="bottom" id="FB4-Dl-MCr"/>
+                            <constraint firstItem="5d3-Mo-sva" firstAttribute="trailing" secondItem="eyd-8G-1Kn" secondAttribute="trailing" id="qgf-Rt-eqb"/>
+                            <constraint firstItem="eyd-8G-1Kn" firstAttribute="leading" secondItem="5d3-Mo-sva" secondAttribute="leading" id="wrp-vK-xde"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="contentViewBottomConstraint" destination="FB4-Dl-MCr" id="0V5-o3-0HE"/>
+                        <outlet property="textView" destination="r5e-RN-TM0" id="yQj-yC-BKP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFC-7e-Fns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="4633"/>
+        </scene>
+    </scenes>
+</document>
