@@ -10,6 +10,8 @@
 - [Usage](#usage)
 - [License](#license)
 
+A `PlaceholderTextView` is a UITextView subclass with an additional functionality. `PlaceholderTextView` main features are placeholder text and ability to change self's size according to text.
+
 ## Requirements
 
 - iOS 11.0+
