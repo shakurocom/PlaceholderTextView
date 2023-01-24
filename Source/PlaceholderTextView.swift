@@ -55,6 +55,7 @@ public class PlaceholderTextView: UITextView {
             placeholderTextView.text = newValue
             invalidateIntrinsicContentSize()
             updatePlaceholder()
+            setupAccessibility()
         }
     }
 
@@ -66,6 +67,7 @@ public class PlaceholderTextView: UITextView {
             placeholderTextView.attributedText = newValue
             invalidateIntrinsicContentSize()
             updatePlaceholder()
+            setupAccessibility()
         }
     }
 
@@ -83,12 +85,14 @@ public class PlaceholderTextView: UITextView {
     override public var text: String! {
         didSet {
             updatePlaceholder()
+            setupAccessibility()
         }
     }
 
     override public var attributedText: NSAttributedString! {
         didSet {
             updatePlaceholder()
+            setupAccessibility()
         }
     }
 
@@ -207,6 +211,17 @@ public class PlaceholderTextView: UITextView {
         return placeholder
         }()
 
+    private func setupAccessibility() {
+        placeholderTextView.isAccessibilityElement = false
+        placeholderTextView.accessibilityElementsHidden = true
+        if placeholderTextView.alpha > 0 && placeholderTextView.superview != nil,
+           let text = placeholderTextView.text, !text.isEmpty {
+            accessibilityLabel = text
+        } else {
+            accessibilityLabel = nil
+        }
+    }
+
 }
 
 private extension PlaceholderTextView {
@@ -227,6 +242,7 @@ private extension PlaceholderTextView {
             })
         }
         updatePlaceholder()
+        setupAccessibility()
         updateTextWithLimit()
         textDidChange?(text)
     }
