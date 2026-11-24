@@ -1,7 +1,7 @@
 ![Shakuro PlaceholderTextView](Resources/title_image.png)
 <br><br>
 # PlaceholderTextView
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
 ![License MIT](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -34,9 +34,27 @@ Then, run the following command:
 $ pod install
 ```
 
+### Swift Package Manager
+
+To integrate PlaceholderTextView into your Xcode project with Swift Package Manager, add it to the `dependencies` of your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/shakurocom/PlaceholderTextView.git", from: "1.0.2")
+]
+```
+
+and add `"PlaceholderTextView"` to your target's dependencies. Alternatively, in Xcode choose **File > Add Package Dependencies…** and enter the repository URL.
+
+Then import the module:
+
+```swift
+import PlaceholderTextView
+```
+
 ### Manually
 
-If you prefer not to use CocoaPods, you can integrate Shakuro.PlaceholderTextView simply by copying it to your project.
+If you prefer not to use CocoaPods or Swift Package Manager, you can integrate Shakuro.PlaceholderTextView simply by copying it to your project.
 
 ## Usage
 
